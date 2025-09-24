@@ -1,5 +1,5 @@
 # Desafio-Grid-Energia---Front-End-Developer
-O projeto em questão se refere ao desafio para a vaga de Front-End Developer da Grid Energia.
+O projeto em questão se refere ao desafio para a vaga de desenvolvedor Front-End da Grid Energia.
 
 Passo a passo para rodar o projeto:
 
