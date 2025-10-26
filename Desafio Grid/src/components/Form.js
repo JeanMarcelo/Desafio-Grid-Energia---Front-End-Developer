@@ -7,7 +7,7 @@ import Second from "./Second";
 import Third from "./Third";
 
 const Form = () => {
-  // Manter os alertas após a validação dos campos
+  // Manter os alertas de erro após a validação dos campos
   const methods = useForm({ mode: "onSubmit", shouldUnregister: false });
 
   const { reset } = methods;

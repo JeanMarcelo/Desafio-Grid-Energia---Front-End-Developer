@@ -7,7 +7,7 @@ const Nav = () => {
       <div className="nav-bar">
         <div className="logo">
         <Link to="/">
-          <img src="https://cdn-icons-png.freepik.com/512/4275/4275343.png?ga=GA1.1.766279810.1737064943" /> 
+          <img src="https://cdn-icons-png.freepik.com/512/4275/4275343.png?ga=GA1.1.766279810.1737064943" alt="icon" /> 
         </Link>
         <Link to="/">
           <p> Desafio Grid </p>

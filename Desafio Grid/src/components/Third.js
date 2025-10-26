@@ -1,7 +1,8 @@
 import React from "react";
-import { useForm, FormProvider, useFormContext } from "react-hook-form";
+import { useFormContext } from "react-hook-form";
 
 const Third = ({ prevStep }) => {
+  //Registrar os valores, identificar os erros e mandar os valores globalmente.
   const {
     register,
     formState: { errors },

@@ -83,6 +83,7 @@ const List = () => {
     getUsers();
   };
 
+
   // Verificar se há usuários cadastrados
   useEffect(() => {
     setNoUsers(users.length === 0 ? true : false);
@@ -140,13 +141,11 @@ const List = () => {
           {loading && (
             <div className="atcenter">
               <div>
-                <div className="middle">
-                  <div class="loader"></div>
-                </div>
+                <div className="loader"></div>
               </div>
             </div>
           )}
-          {noUsers && (
+          {noUsers && !loading && (
             <div>
               <h3>Nenhum usuário cadastrado</h3>
             </div>
@@ -174,7 +173,7 @@ const List = () => {
                     <div className="delete">
                       <img
                         src={imgDelete}
-                        alt="Delete image"
+                        alt="Delete icon"
                         onClick={() => deleteUser(person.id)}
                       />{" "}
                     </div>
