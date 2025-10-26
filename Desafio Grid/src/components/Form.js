@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useForm, FormProvider } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import First from "./First";
 import Second from "./Second";
@@ -120,6 +121,8 @@ useEffect(() => {
   showUser();
 }, []);
 
+const navigate = useNavigate();
+
 //Pegar os dados de email dos users no servidor
 async function showUser() {
   const response = await axios.get(
@@ -147,10 +150,9 @@ async function createUser(data) {
     setMessage(false);
   }, 3000);
   setTimeout(() => {
-    window.location.reload();
-  }, 4500);
+    navigate("/");
+  }, 4200);
 }
-
 return (
   <>
     <FormProvider {...methods}>
